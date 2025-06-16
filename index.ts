@@ -42,7 +42,7 @@ const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, windo
 composer.addPass(bloomPass);
 
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('/public/resources/space/scene.gltf', (gltf) => {
+gltfLoader.load('public/resources/space/scene.gltf', (gltf) => {
   const root = gltf.scene;
 
   planets = root.clone();
